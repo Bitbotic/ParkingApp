@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:gravity="center_horizontal|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+
+            <Button
+                android:id="@+id/btn_list"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_list"
+                android:textSize="21sp"
+                android:background="@drawable/home_button_bg"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/ic_arrow_right"
+                />
+
+            <Button
+                android:id="@+id/btn_mapa"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btn_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_map"
+                android:textSize="21sp"
+                android:background="@drawable/home_button_bg"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/ic_arrow_right"
+                />
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btn_mapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_close"
+                android:textSize="21sp"
+                android:visibility="gone"
+                android:background="@drawable/home_button_bg"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/ic_arrow_right"
+                />
+
+            <Button
+                android:id="@+id/btn_poi"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_poi"
+                android:textSize="21sp"
+                android:background="@drawable/home_button_bg"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:drawableRight="@drawable/ic_arrow_right"
+                />
+
+            <Button
+                android:id="@+id/btn_settings"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btn_mapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_button_bg"
+                android:textColor="@color/white"
+                android:text="@string/btn_settings"
+                android:textSize="21sp"
+                android:drawableRight="@drawable/ic_arrow_right"
+                />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/bitbotic_logo"
+            layout="@layout/bitbotic" />
+
+    </LinearLayout>
+</ScrollView>

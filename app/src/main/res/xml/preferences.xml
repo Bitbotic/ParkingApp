@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <PreferenceCategory
+        android:title="@string/parking_preferences">
+
+        <CheckBoxPreference
+            android:key="parking_op"
+            android:defaultValue="true"
+            android:title="@string/parking_title_screen_preference"
+            android:summary="@string/summary_parking_preference" />
+
+    </PreferenceCategory>
+
+    <!--
+    <PreferenceCategory
+        android:title="@string/dialog_based_preferences">
+
+        <EditTextPreference
+            android:key="edittext_preference"
+            android:title="@string/title_edittext_preference"
+            android:summary="@string/summary_edittext_preference"
+            android:dialogTitle="@string/dialog_title_edittext_preference" />
+
+        <ListPreference
+            android:key="list_preference"
+            android:title="@string/title_list_preference"
+            android:summary="@string/summary_list_preference"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entryvalues_list_preference"
+            android:dialogTitle="@string/dialog_title_list_preference" />
+
+    </PreferenceCategory>
+    -->
+    <PreferenceCategory
+        android:title="@string/turist_preferences">
+
+        <!-- This PreferenceScreen tag serves as a screen break (similar to page break
+            in word processing). Like for other preference types, we assign a key
+            here so it is able to save and restore its instance state. -->
+
+        <PreferenceScreen
+            android:key="screen_preference"
+            android:title="@string/turist_info_title_screen_preference"
+            android:summary="@string/summary_turist_info_preference">
+
+            <PreferenceCategory
+                    android:title="@string/turist_info_title_screen_preference">
+
+                <CheckBoxPreference
+                    android:key="turist_op_1"
+                    android:title="@string/turist_info_op_1"
+                    android:defaultValue="false"
+                     />
+
+                <CheckBoxPreference
+                    android:key="turist_op_2"
+                    android:title="@string/turist_info_op_2"
+                    android:defaultValue="false"
+                     />
+
+                <CheckBoxPreference
+                    android:key="turist_op_3"
+                    android:title="@string/turist_info_op_3"
+                    android:defaultValue="false"
+                    />
+
+                <CheckBoxPreference
+                    android:key="turist_op_4"
+                    android:title="@string/turist_info_op_4"
+                    android:defaultValue="false"
+                     />
+
+                <CheckBoxPreference
+                    android:key="turist_op_5"
+                    android:title="@string/turist_info_op_5"
+                    android:defaultValue="false"
+                    />
+
+            </PreferenceCategory>
+        </PreferenceScreen>
+
+        <!--
+        <PreferenceScreen
+            android:title="@string/title_intent_preference"
+            android:summary="@string/summary_intent_preference">
+
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://www.android.com" />
+        </PreferenceScreen>
+        -->
+    </PreferenceCategory>
+
+    <!--
+    <PreferenceCategory
+        android:title="@string/preference_attributes">
+
+        <CheckBoxPreference
+            android:key="parent_checkbox_preference"
+            android:title="@string/title_parent_preference"
+            android:summary="@string/summary_parent_preference" />
+
+
+        <CheckBoxPreference
+            android:key="child_checkbox_preference"
+            android:dependency="parent_checkbox_preference"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:title="@string/title_child_preference"
+            android:summary="@string/summary_child_preference" />
+
+    </PreferenceCategory>
+    -->
+</PreferenceScreen>         
