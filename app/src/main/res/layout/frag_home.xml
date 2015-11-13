@@ -82,6 +82,19 @@
                 android:drawableRight="@drawable/ic_arrow_right"
                 />
 
+            <Button
+                android:id="@+id/btn_about"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btn_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_about"
+                android:textSize="21sp"
+                android:background="@drawable/home_button_bg"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/ic_arrow_right"
+                />
+
         </RelativeLayout>
 
         <include

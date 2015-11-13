@@ -64,9 +64,9 @@ public class ParkingListFragment extends BaseListFragment implements DataManager
 
         responsePoiInfoParking response = (responsePoiInfoParking) Data;
 
-        if(response!=null) {
+        if (response != null) {
 
-            adapter = new HomeRecyclerAdapter(getActivity(), response.data,latitude,longitude);
+            adapter = new HomeRecyclerAdapter(getActivity(), response.data, latitude, longitude);
             mRecyclerView.setAdapter(adapter);
 
             ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(adapter);

@@ -31,6 +31,7 @@
     <string name="btn_list">Ver lista</string>
     <string name="btn_close">Cerca de Mí</string>
     <string name="btn_poi">Puntos de Interes</string>
+    <string name="btn_about">¿Quién Somos?</string>
 
     <!-- Global -->
     <string name="bitbotic">Bitbotic</string>

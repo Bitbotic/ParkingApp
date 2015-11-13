@@ -158,7 +158,7 @@ public class HomeRecyclerAdapter extends RecyclerView.Adapter<HomeRecyclerAdapte
 
         final View rootView = customViewHolder.itemView;
 
-        setAnimation(customViewHolder.itemView, i);
+        //setAnimation(customViewHolder.itemView, i);
     }
 
     @Override
@@ -259,7 +259,6 @@ public class HomeRecyclerAdapter extends RecyclerView.Adapter<HomeRecyclerAdapte
         //onSelected((CustomViewHolder) viewHolder));
     }
 
-
     @Override
     public void onItemSwiped(final RecyclerView.ViewHolder viewHolder, int swipeDir) {
         //remove(position);
@@ -297,7 +296,6 @@ public class HomeRecyclerAdapter extends RecyclerView.Adapter<HomeRecyclerAdapte
         }*/
     }
 
-
     public class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         protected ImageView imageView;
         protected TextView textView;
@@ -322,7 +320,6 @@ public class HomeRecyclerAdapter extends RecyclerView.Adapter<HomeRecyclerAdapte
             this.imageView = (ImageView) view.findViewById(R.id.thumbnail);
             this.textView = (TextView) view.findViewById(R.id.title);
             this.distance = (TextView) view.findViewById(R.id.distance);
-
 
             // If isViewExpanded == false then set the visibility
             // of whatever will be in the expanded to GONE
@@ -355,7 +352,6 @@ public class HomeRecyclerAdapter extends RecyclerView.Adapter<HomeRecyclerAdapte
             viewToAnimate.startAnimation(animation);
             lastPosition = position;
         }
-
 
         viewToAnimate.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() {
 

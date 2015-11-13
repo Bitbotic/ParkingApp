@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.android.parking.myparking.R;
 import com.madrid.parking.android.model.Parking;
+import com.madrid.parking.android.ui.fragment.DetailParkingFragment;
 import com.madrid.parking.android.ui.fragment.DetailPoiFragment;
 
 /**
@@ -42,12 +43,12 @@ public class DetailActivity extends BaseActivity {
                 final DetailPoiFragment detailPoiFragment = DetailPoiFragment.newInstance(MParkingModel);
                 switchContent(detailPoiFragment, detailPoiFragment.getClass().getCanonicalName());
             }else{
-                Toast.makeText(this, "Not Implemented", Toast.LENGTH_SHORT).show();
+                DetailParkingFragment detailParkingFragment = DetailParkingFragment.newInstance(MParkingModel);
+                switchContent(detailParkingFragment, detailParkingFragment.getClass().getCanonicalName());
+                //Toast.makeText(this, "Not Implemented", Toast.LENGTH_SHORT).show();
             }
         }
-
     }
-
 
     private void configureActionBar() {
 
